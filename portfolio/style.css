@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d47a1;
+  padding: 15px 30px;
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid white;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.hero .text {
+  flex: 1;
+  font-size: 24px;
+}
+
+.hero .profile img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+.skills{
+  text-align: center;
+}
+.slider {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+}
+
+.slide {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+  margin-left: 400px;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0d47a1;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .profile img {
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+}
+/*contact*/
+.h1{
+  text-align: center;
+}
+.contact-container {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.email-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.email-box i {
+  margin-right: 10px;
+  color: #007BFF;
+}
+
+.email-box a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.email-box a:hover {
+  color: #007BFF;
+}
+
+.home-page {
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+
+}
+
+.home-page:hover {
+  color: red;
+  background-color: yellow;
+}
+/*about*/
+.about-section {
+  background-color: rgb(57, 56, 56);
+  color: white;
+}
+
+.about {
+  text-align: center;
+
+}
+
+.about-text {
+  width: 70%;
+  text-align: start;
+  margin: auto;
+  font-size: 2rem;
+}
+
+#name {
+  font-size: 2.2rem;
+  color: rgb(28, 210, 210);
+}
+
+#undr-line {
+  text-decoration: underline;
+  color: rgb(241, 5, 5);
+}
+
+#dream {
+  font-size: 2.1rem;
+  color: rgb(0, 195, 255);
+}
+.text-2{
+  margin-top: 50px;
+  margin-left: 200px;
+  font-size: 2rem;
+  width: 70%;
+  background-color: rgb(185, 177, 179);
+  color: rgb(10, 7, 4);
+  text-align: center;
+}
